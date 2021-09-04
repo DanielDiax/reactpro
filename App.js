@@ -1,21 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+// esta es la estructura basica de react
+import React, {Component} from 'react';  // Importes principales 
+import { View, StyleSheet } from 'react-native';// Importes principales 
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+
+class home extends Component { //Creacion de clase de tipo componente
+  render(){
+    return(
+      <View style = {{flex: 1, backgroundColor: 'blue',}}>
+        <View style = {{width: 400 , height: 400, backgroundColor: 'red'}}>
+              
+        </View>
+      </View>
+    );
+    
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+const estilos = StyleSheet.create({ //Estilos de el componente
+
+
+
 });
+
+
+export default home; // se exporta el contenido de la clase home de tipo componente
